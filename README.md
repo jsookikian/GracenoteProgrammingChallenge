@@ -26,12 +26,12 @@ If we pass this check, then we add the extra letter in the list to our palindrom
 
 
 ## Part 5 - Artist Collaborations
-###Initial Implementation
+### Initial Implementation
 First, we take our list of artists and filter out every artist that does not contain any spaces since a collaboration is marked with an ampersand, comma, semicolon, colon, the string "feat.", the string "vs."
 and must have more than one space in it. 
 Then, we filter by keywords and special characters that indicate a collaboration, and perform a regex split on the artist string which divides the artist up into multiple artists in a list. 
 
-###Going Forward
+### Going Forward
 
 If provided with a larger dataset including songs and artists, we could create a database full of metadata for each artist. Then when we come across a song with artists that appears to be a collaboration (passes through filters and validations), then we can cross reference the supposed artist collaborations with our metadata to see if those artists have songs out under their own names.
 
